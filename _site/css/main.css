@@ -1,6 +1,10 @@
 
 
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
   font-family: helvetica, arial, sans;
 }
@@ -12,9 +16,17 @@ a {
   color: #f00;
 }
 
+h2 ~ p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
+}
+
 /* HERO STYLES */
 .full-hero {
-  background-color: #c7dbfc;
+  background-color: #55f;
   height: 50vh;
 }
 
@@ -44,6 +56,10 @@ a {
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
+}
+.social-link:hover,
+.social-link:active {
+  background: green;
 }
 
 /* BIO STYLES */
@@ -84,4 +100,91 @@ a {
 }
 .bio-copy a {
   color: green;
+}
+
+
+/* HEADER STYLES */
+
+.header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  padding-top: 10px;
+  position: relative;
+  width: 10vh;
+  text-align: center;
+  left: -30px;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
+.header-logo img {
+  height: 80%;
+}
+.header-nav {
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding-left: 1em;
+}
+.header-nav a {
+  color: #fff;
+
+}
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #fff;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 10vh 0 15vh;
+}
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: #fff;
+  text-transform: uppercase;
+
+}
+.footer h3 span {
+  color: #aaa;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
 }
