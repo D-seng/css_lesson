@@ -2,11 +2,18 @@
 <!DOCTYPE html>
 <html>
 
-{% include head.html %}
+<!-- {% include head.html %} -->
+<head>
+  <title>Test Page: Don't Panic</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/reset.css" >
+  <link rel="stylesheet" href="/css/main.css" >
+  <link rel="stylesheet" href="/css/hero.css" >
+</head>
 
   <body>
     {% include header.html %}
-    
+
     <div class="content-container">
       {{ content }}
     </div>
