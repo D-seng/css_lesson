@@ -10,7 +10,7 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>
 
 Ay, mate. Yo ho ho and a bottle of rum.
 
-<img class="pull-left" src="http://placekitten.com/g/400/200"
+<img class="pull-left" src="/images/shark.jpg"
      alt="kitten">
 
 Whenever I find myself growing grim about the mouth; whenever it is a damp,
